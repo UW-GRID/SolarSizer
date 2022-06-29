@@ -1,0 +1,6 @@
+dash==2.0
+matplotlib
+nrel-pysam
+numpy
+pandas
+gunicorn==19.9.0

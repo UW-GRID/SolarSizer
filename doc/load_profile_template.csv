@@ -1,0 +1,13 @@
+Basic Load Assumptions,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,Peak (W),Base (W),Hourly Loads (Wh),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Totals
+Room,Load Type:,Description:,Peak load per device (W),Base load per device (W),Total number of devices,Duration Assumptions:,,,1,,2,,3,,4,,5,,6,,7,,8,,9,,10,,11,,12,,13,,14,,15,,16,,17,,18,,19,,20,,21,,22,,23,,24,,
+,,,,,,,,,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,# On,Load,
+#Location#,#Typet 1#,,#Peak load for Type 1#,#Base load for Type 1#,#Number of devices of Type 1#,#Times devices of Type 1 are on#,#Total peak load for all devices of Type 1#,#Total base load for all devices of Type 1#,#num of Type 1 devices on for hour 1#,#Total load for all devices of Type 1 for hour 1#,#num of Type 1 devices on for hour 2#,#Total load for all devices of Type 1 for hour 2#,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,#Total load for all devices of Type 1 for full day#
+,#Type 2#,,#Peak load for Type 2#,#Base load for Type 2#,#Number of devices of Type 2#,#Times devices of Type 2 are on#,#Total peak load for all devices of Type 2#,#Total base load for all devices of Type 2#,#num of Type 2 devices on for hour 1#,#Total load for all devices of Type 2 for hour 1#,#num of Type 2 devices on for hour 2#,#Total load for all devices of Type 2 for hour 2#,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,#Total load for all devices of Type 2 for full day#
+,.,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,.,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,.,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,.,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,.,,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.
+,,,,,,,#Total peak load for all devices#,,#Total load for hour 1# ,,#Total load for hour 2# ,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.,,.
+Factor of Saftey:,#safety factor#,,,,,,#Total peak load for all devices with safety factor#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#Total load for all devices for full day#

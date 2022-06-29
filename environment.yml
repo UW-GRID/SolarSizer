@@ -1,0 +1,16 @@
+name: grid_ss
+
+channels:
+  - defaults
+  - nrel
+  - r
+  - conda-forge
+
+dependencies:
+  - dash=2.0
+  - dash-bootstrap-components
+  - matplotlib
+  - nrel-pysam
+  - numpy
+  - pandas
+  - python=3.6
