@@ -33,6 +33,7 @@ for detailed explanation on MMPT, subarray, strings, etc
 
 import numpy as np
 import pandas as pd
+import sqlite3
 from pysam.pysam_utils import run_pvmodel
 
 def pysam_model():
@@ -45,7 +46,36 @@ def pysam_model():
     Returns:
         df_system_array (df):Pandas dataframe that contains component information
     """
+    # longitude = 1
+    # latitude = 5
+    # modules = 20
+    # strings = 25
+
     print('started running')
+    connection = sqlite3.connect('C:\SolarSizer\solarsizer\data\simulations.db')
+    cursor = connection.cursor()
+    print("Connected to the database")
+
+    # create previous simulations table if not already created
+    table_command = """CREATE TABLE IF NOT EXISTS Simulations1 (
+    latitude REAL,
+    longitude REAL,
+    num_modules INTEGER,
+    num_strings INTEGER,
+    PRIMARY KEY (latitude, longitude)
+    );
+    """
+    cursor.execute(table_command)
+
+    # check if location has been already simulated for
+    cursor.execute("SELECT * FROM Simulations WHERE latitude=" + str(latitude) + " AND longitude=" + str(longitude))
+    prev_simulations = cursor.fetchall()
+    print(prev_simulations)
+    if len(prev_simulations) != 0:
+        # run previous simulation
+        print("Previous simulations found")
+    else:
+        print("Previous simulation not found")
 
     ## Running single scenario to get an estimate of the array size
     pv_guess, our_load_profile = run_pvmodel.execute_pvmodel(2, 1, n_inverters=1)
@@ -125,5 +155,14 @@ def pysam_model():
     #df_uptime_met = df_system_array[df_system_array.Uptime_Percent>0.95]
 
     print('finished running')
-
+    
+    # add simulation to database
+    # where are the longitude, latitude, best number modules and number of strings?
+    cursor.execute('INSERT INTO Simulations VALUES ('+ str(latitude) + ', ' + str(longitude) + ', ' + str(modules)+ ', ' + str(strings) + ')')
+    connection.commit()
+    connection.close()
+    print("Connection to database closed")
     return df_system_array
+
+# if __name__ == "__main__":
+#     pysam_model()
